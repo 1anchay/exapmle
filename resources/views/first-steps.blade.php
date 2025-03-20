@@ -99,50 +99,115 @@
                 <p class="mt-4 text-lg text-muted">Когда-то давно люди строили пирамиды, открывали новые земли и создавали произведения искусства. Сегодня же они... чинят баги в три часа ночи. 🧑‍💻☕</p>
                 <p class="mt-2 text-lg text-dark">Наш проект создан для того, чтобы помочь вам плавно войти в мир IT и не убежать обратно в лес.</p>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-                    <!-- Изображения с иконками Heroicons -->
-                    <div class="p-4 bg-dark-bg rounded-lg shadow-lg text-center transform hover:scale-105 transition duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-gray-100 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <p class="mt-3 text-gray-100">Кодинг без боли</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Первая карточка -->
+                    <div class="p-6 bg-gray-900 rounded-lg shadow-lg text-center transform hover:scale-105 transition duration-300">
+                        <img src="https://img.freepik.com/premium-photo/robot-hand-holding-glowing-crystal-advanced-futuristic-technology-ai-concept_691560-6615.jpg" 
+                             alt="AI Robot Hand with Crystal" class="rounded-lg mx-auto mb-4 shadow-md w-full h-48 object-cover">
+                        <div class="flex justify-center items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <p class="text-gray-100 text-xl font-semibold">Кодинг без боли</p>
+                        </div>
+                        <p class="mt-2 text-gray-400 text-sm">Разработка проектов без стресса и хаоса.</p>
                     </div>
-                    <div class="p-4 bg-dark-bg rounded-lg shadow-lg text-center transform hover:scale-105 transition duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-gray-100 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <p class="mt-3 text-gray-100">Хакатоны и вызовы</p>
+
+                    <!-- Вторая карточка -->
+                    <div class="p-6 bg-gray-800 rounded-lg shadow-lg text-center transform hover:scale-105 transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1545987796-200677ee1011?q=80&w=1280" 
+                             alt="Hackathon" class="rounded-lg mx-auto mb-4 shadow-md w-full h-48 object-cover">
+                        <div class="flex justify-center items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3"></path>
+                            </svg>
+                            <p class="text-gray-100 text-xl font-semibold">Хакатоны и вызовы</p>
+                        </div>
+                        <p class="mt-2 text-gray-400 text-sm">Прими участие в соревнованиях и прокачай навыки.</p>
                     </div>
                 </div>
 
-                <p class="mt-6 text-xl font-bold text-gray-100">Что вас ждёт:</p>
-                <ul class="list-disc list-inside mt-4 space-y-2 text-lg text-muted">
-                    <li class="text-green-400 flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        Курсы, которые не вызывают сонливость
-                    </li>
-                    <li class="text-green-400 flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        Практика, от которой не хочется плакать
-                    </li>
-                    <li class="text-green-400 flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        Менторы, которые поддержат, а не скажут "Гугли"
-                    </li>
-                </ul>
-                
-                <p class="mt-6 text-lg font-medium text-dark">Присоединяйтесь к нам, и, возможно, через год вы будете говорить "Простая задачка на два часа" (и делать её две недели, как положено). 🚀</p>
-            </section>
+                <section class="relative bg-gray-900 py-12 px-6 rounded-lg shadow-lg overflow-hidden">
+    <!-- Летающая бабочка -->
+    <div class="absolute top-0 left-0 animate-fly">
+        <img src="https://pngimg.com/uploads/butterfly/butterfly_PNG1065.png" alt="Flying Butterfly" class="w-20 opacity-75">
+    </div>
+
+    <h2 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 text-center">
+        Что вас ждёт:
+    </h2>
+
+    <ul class="mt-6 space-y-6 text-lg">
+        <!-- Первая карточка -->
+        <li class="flex items-center bg-gray-800 p-6 rounded-lg shadow-md hover:scale-105 transition duration-300">
+            <img src="https://cdn.pixabay.com/photo/2022/01/06/16/45/robot-6915510_1280.jpg" alt="AI Learning" 
+                class="rounded-lg w-20 h-20 object-cover shadow-lg mr-4">
+            <p class="text-white flex items-center">
+                <svg class="h-6 w-6 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Курсы, которые **держат в тонусе**, а не в коме
+            </p>
+        </li>
+
+        <!-- Вторая карточка -->
+        <li class="flex items-center bg-gray-800 p-6 rounded-lg shadow-md hover:scale-105 transition duration-300">
+            <img src="https://cdn.pixabay.com/photo/2021/09/17/09/46/robot-6629827_1280.jpg" alt="Practice Coding" 
+                class="rounded-lg w-20 h-20 object-cover shadow-lg mr-4">
+            <p class="text-white flex items-center">
+                <svg class="h-6 w-6 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Практика, которая **вдохновляет**, а не ломает
+            </p>
+        </li>
+
+        <!-- Третья карточка -->
+        <li class="flex items-center bg-gray-800 p-6 rounded-lg shadow-md hover:scale-105 transition duration-300">
+            <img src="https://cdn.pixabay.com/photo/2021/04/02/19/09/ai-6121872_1280.jpg" alt="AI Technology" 
+                class="rounded-lg w-20 h-20 object-cover shadow-lg mr-4">
+            <p class="text-white flex items-center">
+                <svg class="h-6 w-6 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Открытие новых технологий **каждый день**
+            </p>
+        </li>
+
+        <!-- Четвертая карточка -->
+        <li class="flex items-center bg-gray-800 p-6 rounded-lg shadow-md hover:scale-105 transition duration-300">
+            <img src="https://cdn.pixabay.com/photo/2020/07/10/22/56/artificial-intelligence-5393314_1280.jpg" alt="AI Growth" 
+                class="rounded-lg w-20 h-20 object-cover shadow-lg mr-4">
+            <p class="text-white flex items-center">
+                <svg class="h-6 w-6 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                **Рост** и развитие технологий на каждом шагу
+            </p>
+        </li>
+
+        <!-- Пятая карточка -->
+        <li class="flex items-center bg-gray-800 p-6 rounded-lg shadow-md hover:scale-105 transition duration-300">
+            <img src="https://cdn.pixabay.com/photo/2021/11/25/15/55/robot-6843357_1280.jpg" alt="Future AI" 
+                class="rounded-lg w-20 h-20 object-cover shadow-lg mr-4">
+            <p class="text-white flex items-center">
+                <svg class="h-6 w-6 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                **Будущее** искусственного интеллекта уже здесь!
+            </p>
+        </li>
+    </ul>  
+</section>
+
+
         </div>
     </div>
-    
-    @include('footer')
 
+    <!-- Футер -->
+    <footer class="w-full bg-gray-900 py-6 text-center text-white mt-auto">
+    @include('footer')
+            
+    </footer>
 </body>
 </html>
