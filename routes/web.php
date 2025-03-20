@@ -52,3 +52,6 @@ Route::get('/reviews/create', [ReviewController::class, 'create'])->name('review
 Route::post('/reviews', [ReviewController::class, 'store'])->name('reviews.store');  
 // Страница IT-курсов
 Route::get('/it-courses', [ITCourseController::class, 'index'])->name('it.courses');
+Route::get('/first-steps', function () {
+    return view('first-steps');
+})->name('first.steps');

@@ -5,7 +5,7 @@
       <div>
         <h4 class="text-lg font-semibold mb-4">О проекте</h4>
         <ul>
-          <li><a href="{{ route('history') }}" class="hover:text-gray-300 transition-colors">История</a></li>
+        <li><a href="{{ route('first.steps') }}" class="hover:text-gray-300 transition-colors">Первые шаги в IT</a></li>
           <a href="{{ route('team') }}" class="text-blue-500 hover:underline">Наша команда</a>
 
 
