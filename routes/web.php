@@ -1,33 +1,54 @@
 <?php
 
-use App\Http\Controllers\MyPlaceController;
-
-Route::get('/my_page', [MyPlaceController::class, 'index']);
-
+use App\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Route;
-
-Route::get('/main', function () {
-    return view('main');
-});
-Route::get('/tailwind-demo', function () {
-    return view('tailwind-demo');
-});
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\MainController;
+use App\Http\Controllers\MyPlaceController;
+use App\Http\Controllers\CourseController;
+use App\Http\Controllers\ITCourseController;
+// Главная страница
 Route::get('/', function () {
-    return view('sad');
+    return view('main'); 
+})->name('main');
+
+// Маршруты для аутентификации (доступны только гостям)
+Route::middleware('guest')->group(function () {
+    Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
+    Route::post('login', [LoginController::class, 'login']);
+    Route::get('register', [RegisterController::class, 'showRegistrationForm'])->name('register');
+    Route::post('register', [RegisterController::class, 'register']);
 });
 
+// Маршрут для выхода (доступен только аутентифицированным пользователям)
+Route::middleware('auth')->post('logout', [LoginController::class, 'logout'])->name('logout');
+
+// Страница my_page
+Route::get('/my_page', [MyPlaceController::class, 'index'])->name('my_page');
+
+// Страница команды
 Route::get('/team', function () {
-    return view('team');  // Открывает файл team.blade.php
+    return view('team'); 
 })->name('team');
 
+// Страница истории
 Route::get('/history', function () {
     return view('history');
 })->name('history');
 
-use App\Http\Controllers\MainController;
+// Страница для демонстрации Tailwind CSS
+Route::get('/tailwind-demo', function () {
+    return view('tailwind-demo');
+})->name('tailwind-demo');
 
+// Дополнительные маршруты контроллера Main
 Route::get('/main', [MainController::class, 'index'])->name('main');
+Route::get('/courses', [CourseController::class, 'index'])->name('courses');
 
-
-
-
+// Маршруты для отзывов
+Route::get('/reviews', [ReviewController::class, 'index'])->name('reviews.index');
+Route::get('/reviews/create', [ReviewController::class, 'create'])->name('reviews.create');
+Route::post('/reviews', [ReviewController::class, 'store'])->name('reviews.store');  
+// Страница IT-курсов
+Route::get('/it-courses', [ITCourseController::class, 'index'])->name('it.courses');

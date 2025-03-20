@@ -28,137 +28,220 @@
         <!-- Шапка сайта -->
         @include('hader')
 
+    <!-- Подключаем иконки FontAwesome для кнопок -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        /* Анимация для карточек */
+        .course-card {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        /* Анимация для фильтров */
+        .filter-category,
+        .filter-level {
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .filter-category:hover,
+        .filter-level:hover {
+            transform: scale(1.05);
+            background-color: #6b46c1; /* Тот же цвет, что и у hover эффектов */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Кнопка переключения темы -->
+    <button id="theme-toggle" class="absolute top-6 right-6 p-2 bg-gray-800 text-white rounded-full">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <div id="wrapper" class="flex flex-col min-h-screen">
+
+        <!-- Шапка сайта -->
+        
+
         <div class="container mx-auto p-8">
-        <div class="bg-white shadow-md rounded-lg p-6 mb-8">
-    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Фильтры</h3>
+            <div class="bg-white shadow-md rounded-lg p-6 mb-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Фильтры</h3>
 
-    <!-- Категория -->
-    <div class="mb-4">
-        <span class="block text-gray-700 font-medium mb-2">Категория</span>
-        <div class="flex flex-wrap gap-4">
-            <div class="filter-category bg-indigo-100 px-4 py-2 rounded-lg text-indigo-700 cursor-pointer hover:bg-indigo-200" data-filter="development">Разработка</div>
-            <div class="filter-category bg-indigo-100 px-4 py-2 rounded-lg text-indigo-700 cursor-pointer hover:bg-indigo-200" data-filter="analytics">Аналитика</div>
-            <div class="filter-category bg-indigo-100 px-4 py-2 rounded-lg text-indigo-700 cursor-pointer hover:bg-indigo-200" data-filter="cybersecurity">Кибербезопасность</div>
-            <div class="filter-category bg-indigo-100 px-4 py-2 rounded-lg text-indigo-700 cursor-pointer hover:bg-indigo-200" data-filter="marketing">Маркетинг</div>
-        </div>
-    </div>
+                <!-- Категория -->
+                <div class="mb-4">
+                    <span class="block text-gray-700 font-medium mb-2">Категория</span>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="filter-category bg-indigo-100 px-4 py-2 rounded-lg text-indigo-700 cursor-pointer hover:bg-indigo-200" data-filter="development">Разработка</div>
+                        <div class="filter-category bg-indigo-100 px-4 py-2 rounded-lg text-indigo-700 cursor-pointer hover:bg-indigo-200" data-filter="analytics">Аналитика</div>
+                        <div class="filter-category bg-indigo-100 px-4 py-2 rounded-lg text-indigo-700 cursor-pointer hover:bg-indigo-200" data-filter="cybersecurity">Кибербезопасность</div>
+                        <div class="filter-category bg-indigo-100 px-4 py-2 rounded-lg text-indigo-700 cursor-pointer hover:bg-indigo-200" data-filter="marketing">Маркетинг</div>
+                    </div>
+                </div>
 
-    <!-- Уровень сложности -->
-    <div class="mb-4">
-        <span class="block text-gray-700 font-medium mb-2">Уровень сложности</span>
-        <div class="flex flex-wrap gap-4">
-            <div class="filter-level bg-gray-100 px-4 py-2 rounded-lg text-gray-700 cursor-pointer hover:bg-gray-200" data-level="beginner">Новичок</div>
-            <div class="filter-level bg-gray-100 px-4 py-2 rounded-lg text-gray-700 cursor-pointer hover:bg-gray-200" data-level="intermediate">Средний</div>
-            <div class="filter-level bg-gray-100 px-4 py-2 rounded-lg text-gray-700 cursor-pointer hover:bg-gray-200" data-level="advanced">Продвинутый</div>
-        </div>
-    </div>
+                <!-- Уровень сложности -->
+                <div class="mb-4">
+                    <span class="block text-gray-700 font-medium mb-2">Уровень сложности</span>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="filter-level bg-gray-100 px-4 py-2 rounded-lg text-gray-700 cursor-pointer hover:bg-gray-200" data-level="beginner">Новичок</div>
+                        <div class="filter-level bg-gray-100 px-4 py-2 rounded-lg text-gray-700 cursor-pointer hover:bg-gray-200" data-level="intermediate">Средний</div>
+                        <div class="filter-level bg-gray-100 px-4 py-2 rounded-lg text-gray-700 cursor-pointer hover:bg-gray-200" data-level="advanced">Продвинутый</div>
+                    </div>
+                </div>
 
-    <!-- Фильтр "С трудоустройством" -->
-    <div class="flex items-center justify-between">
-        <label class="text-gray-700 font-medium">С трудоустройством</label>
-        <label class="switch">
-            <input type="checkbox" id="employment-filter">
-            <span class="slider"></span>
-        </label>
-    </div>
-</div>
+                <!-- Фильтр "С трудоустройством" -->
+                <div class="flex items-center justify-between">
+                    <label class="text-gray-700 font-medium">С трудоустройством</label>
+                    <label class="switch">
+                        <input type="checkbox" id="employment-filter">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
 
             <!-- Карточки курсов -->
-            <!DOCTYPE html>
-<html lang="ru">
-<head>
-<title>Онлайн-курсы и IT-обучение</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-900 text-white">
-
-    <div class="container mx-auto px-6 py-12">
-        <h1 class="text-4xl font-bold text-center text-indigo-400 mb-10">
-            🚀 Наши Курсы
-        </h1>
-
-        <div id="courses-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Python-разработчик -->
-            <div class="course-card relative bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
-                <span class="bg-indigo-600 text-white py-1 px-4 rounded-lg text-sm absolute top-4 right-4">🔥 Популярное</span>
-                <div class="flex justify-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-16 h-16" alt="Python">
-                </div>
-                <h2 class="text-xl font-semibold text-indigo-400">Python-разработчик</h2>
-                <p class="text-gray-400">⏳ 10 месяцев</p>
-            </div>
-
-            <!-- Data Scientist -->
-            <div class="course-card bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
-                <div class="flex justify-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" class="w-16 h-16" alt="Data Science">
-                </div>
-                <h2 class="text-xl font-semibold text-indigo-400">Data Scientist</h2>
-                <p class="text-gray-400">⏳ 12 месяцев</p>
-            </div>
-
-            <!-- Фронтенд-разработчик -->
-            <div class="course-card bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
-                <div class="flex justify-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-16 h-16" alt="Frontend">
-                </div>
-                <h2 class="text-xl font-semibold text-indigo-400">Фронтенд-разработчик</h2>
-                <p class="text-gray-400">⏳ 9 месяцев</p>
-            </div>
-
-            <!-- Инженер по тестированию -->
-            <div class="course-card relative bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
-                <span class="bg-indigo-600 text-white py-1 px-4 rounded-lg text-sm absolute top-4 right-4">🔥 Популярное</span>
-                <div class="flex justify-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cucumber/cucumber-plain.svg" class="w-16 h-16" alt="QA">
-                </div>
-                <h2 class="text-xl font-semibold text-indigo-400">Инженер по тестированию</h2>
-                <p class="text-gray-400">⏳ 10 месяцев</p>
-            </div>
-
-            <!-- Java-разработчик -->
-            <div class="course-card bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
-                <div class="flex justify-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="w-16 h-16" alt="Java">
-                </div>
-                <h2 class="text-xl font-semibold text-indigo-400">Java-разработчик</h2>
-                <p class="text-gray-400">⏳ 8 месяцев</p>
-            </div>
-
-            <!-- Разработчик C++ -->
-            <div class="course-card bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
-                <div class="flex justify-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="w-16 h-16" alt="C++">
-                </div>
-                <h2 class="text-xl font-semibold text-indigo-400">Разработчик C++</h2>
-                <p class="text-gray-400">⏳ 8 месяцев</p>
-            </div>
-
-            <!-- Специалист по кибербезопасности -->
-            <div class="course-card bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
-                <div class="flex justify-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" class="w-16 h-16" alt="Cyber Security">
-                </div>
-                <h2 class="text-xl font-semibold text-indigo-400">Специалист по кибербезопасности</h2>
-                <p class="text-gray-400">⏳ 12 месяцев</p>
-            </div>
-
-            <!-- Аналитик 1С -->
-            <div class="course-card bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
-                <div class="flex justify-center mb-4">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-16 h-16" alt="1C Analyst">
-                </div>
-                <h2 class="text-xl font-semibold text-indigo-400">Аналитик 1С</h2>
-                <p class="text-gray-400">⏳ 8 месяцев</p>
+            <h1 class="text-4xl font-bold text-center text-indigo-400 mb-10">🚀 Наши Курсы</h1>
+            <div id="courses-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Курсы будут добавляться динамически -->
             </div>
         </div>
-    </div>
 
+    <script>
+        // Данные курсов
+        const courses = [
+            {
+                name: 'Python-разработчик',
+                category: 'development',
+                level: 'beginner',
+                duration: '10 месяцев',
+                image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+                popular: true
+            },
+            {
+                name: 'Data Scientist',
+                category: 'analytics',
+                level: 'intermediate',
+                duration: '12 месяцев',
+                image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
+                popular: false
+            },
+            {
+                name: 'Фронтенд-разработчик',
+                category: 'development',
+                level: 'beginner',
+                duration: '9 месяцев',
+                image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+                popular: false
+            },
+            {
+                name: 'Инженер по тестированию',
+                category: 'development',
+                level: 'intermediate',
+                duration: '10 месяцев',
+                image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cucumber/cucumber-plain.svg',
+                popular: true
+            },
+            {
+                name: 'Java-разработчик',
+                category: 'development',
+                level: 'advanced',
+                duration: '8 месяцев',
+                image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
+                popular: false
+            },
+            {
+                name: 'Специалист по кибербезопасности',
+                category: 'cybersecurity',
+                level: 'advanced',
+                duration: '12 месяцев',
+                image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+                popular: false
+            },
+            {
+                name: 'Аналитик 1С',
+                category: 'analytics',
+                level: 'beginner',
+                duration: '8 месяцев',
+                image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+                popular: false
+            }
+        ];
+
+        // Функция для отображения карточек курсов
+const renderCourses = (filteredCourses) => {
+    const container = document.getElementById('courses-container');
+    container.innerHTML = ''; // Очищаем контейнер перед добавлением новых карточек
+    filteredCourses.forEach(course => {
+        const courseCard = document.createElement('div');
+        courseCard.classList.add('course-card', 'bg-gray-800', 'p-6', 'rounded-lg', 'shadow-lg', 'relative');
+        
+        // Структура карточки
+        courseCard.innerHTML = `
+            <!-- Если курс популярен, добавляем иконку "🔥" -->
+            ${course.popular ? '<span class="bg-indigo-600 text-white py-1 px-4 rounded-lg text-sm absolute top-4 right-4">🔥 Популярное</span>' : ''}
+            
+            <div class="flex justify-center mb-4">
+                <img src="${course.image}" class="w-16 h-16 object-contain" alt="${course.name}">
+            </div>
+            
+            <h2 class="text-xl font-semibold text-indigo-400">${course.name}</h2>
+            <p class="text-gray-400">⏳ ${course.duration}</p>
+        `;
+        
+        // Добавляем карточку в контейнер
+        container.appendChild(courseCard);
+    });
+};
+
+
+        // Изначально отображаем все курсы
+        renderCourses(courses);
+
+        // Фильтрация по категориям
+        const filterCategories = document.querySelectorAll('.filter-category');
+        filterCategories.forEach(filter => {
+            filter.addEventListener('click', () => {
+                const category = filter.getAttribute('data-filter');
+                const filteredCourses = courses.filter(course => course.category === category);
+                renderCourses(filteredCourses);
+            });
+        });
+
+        // Фильтрация по уровню сложности
+        const filterLevels = document.querySelectorAll('.filter-level');
+        filterLevels.forEach(filter => {
+            filter.addEventListener('click', () => {
+                const level = filter.getAttribute('data-level');
+                const filteredCourses = courses.filter(course => course.level === level);
+                renderCourses(filteredCourses);
+            });
+        });
+
+        // Фильтрация по трудоустройству
+        const employmentFilter = document.getElementById('employment-filter');
+        employmentFilter.addEventListener('change', () => {
+            if (employmentFilter.checked) {
+                const filteredCourses = courses.filter(course => course.popular);
+                renderCourses(filteredCourses);
+            } else {
+                renderCourses(courses);
+            }
+        });
+
+        // Переключение темы
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('bg-gray-900');
+            document.body.classList.toggle('text-white');
+            document.body.classList.toggle('bg-gray-50');
+            document.body.classList.toggle('text-gray-900');
+        });
+    </script>
 </body>
-</html>
-
 </head>
 <body class="bg-gray-50 text-gray-900">
     <div class="container mx-auto p-8">

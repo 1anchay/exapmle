@@ -16,118 +16,125 @@
             <h1 class="text-4xl font-semibold text-center text-indigo-400 mb-12">Наша команда</h1>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
     <!-- Член 1 -->
-    <div class="team-member group bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition duration-300 hover:scale-105">
-        <div class="relative">
-            <!-- Смешная шапка: Волшебная шляпа -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="magic-hat absolute top-0 left-1/2 transform -translate-x-1/2 w-16 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path d="M10 2a1 1 0 011 1v5h-2V3a1 1 0 011-1zm4 4a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1h8a1 1 0 011 1v3z"/>
-            </svg>
-            <img src="{{ asset('images/member1.jfif') }}" alt="Иван Живоглядов" class="w-full h-64 object-cover">
-        </div>
-        <h3 class="text-xl font-semibold text-center mt-4">Иван Живоглядов</h3>
-        <div class="member-info text-center p-4">
-            <p class="text-indigo-400">Руководитель проекта</p>
-            <p>Опыт: 10 лет</p>
-            <p>Описание: Суровый руководитель, который всегда идет к своей цели.</p>
-        </div>
-        <!-- Достижения -->
-        <div class="achievements flex justify-center space-x-4 mt-4">
-            <div class="relative group">
-                <!-- Иконка 1: Баг-иконка -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-yellow-400 cursor-pointer" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                    <path d="M10 4a1 1 0 011 1v12a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h5zM15 7a1 1 0 011 1v8a1 1 0 01-1 1h-2a1 1 0 01-1-1V8a1 1 0 011-1h2z" />
-                </svg>
-                <div class="absolute inset-0 flex items-center justify-center text-sm text-white bg-gradient-to-r from-blue-500 via-green-500 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg p-4 text-center">
-                    5 лет в устранении багов в образовательных платформах
-                </div>
-            </div>
-            <div class="relative group">
-                <!-- Иконка 2: Чат-иконка -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-yellow-400 cursor-pointer" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M18 10c0-4.418-3.582-8-8-8s-8 3.582-8 8c0 2.267.963 4.29 2.552 5.722l-2.306 2.306a1 1 0 001.414 1.414l2.893-2.893A7.96 7.96 0 0010 18c4.418 0 8-3.582 8-8z" clip-rule="evenodd"/>
-                </svg>
-                <div class="absolute inset-0 flex items-center justify-center text-sm text-white bg-gradient-to-r from-blue-500 via-green-500 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg p-4 text-center">
-                    Создание интерфейсов для цифрового обучения
-                </div>
-            </div>
-        </div>
+    <head>
+    <!-- Подключение шрифтов Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<div class="team-member group bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+    <div class="relative">
+        <!-- Фото участника -->
+        <img src="{{ asset('images/member1.jfif') }}" alt="Иван Живоглядов" class="w-full h-64 object-cover rounded-t-lg">
     </div>
 
-    <!-- Член 2 -->
-    <div class="team-member group bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition duration-300 hover:scale-105">
-        <div class="relative">
-            <!-- Смешная шапка: Кролик -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="magic-hat absolute top-0 left-1/2 transform -translate-x-1/2 w-16 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path d="M5 3a2 2 0 012 2v12a2 2 0 01-2 2H3a2 2 0 01-2-2V5a2 2 0 012-2h2zM15 3a2 2 0 012 2v12a2 2 0 01-2 2h-2a2 2 0 01-2-2V5a2 2 0 012-2h2z"/>
-            </svg>
-            <img src="{{ asset('images/member2.jpg') }}" alt="Евгений Белоконов" class="w-full h-64 object-cover">
-        </div>
-        <h3 class="text-xl font-semibold text-center mt-4">Евгений Белоконов</h3>
-        <div class="member-info text-center p-4">
-            <p class="text-indigo-400">Дизайнер</p>
-            <p>Опыт: 5 лет</p>
-            <p>Описание: Дизайн — это искусство, которое улучшает пользовательский опыт.</p>
-        </div>
-        <!-- Достижения -->
-        <div class="achievements flex justify-center space-x-4 mt-4">
-            <div class="relative group">
-                <!-- Иконка 3: Компьютер -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-yellow-400 cursor-pointer" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
-                </svg>
-                <div class="absolute inset-0 flex items-center justify-center text-sm text-white bg-gradient-to-r from-blue-500 via-green-500 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg p-4 text-center">
-                    5 лет в создании пользовательских интерфейсов
-                </div>
-            </div>
-            <div class="relative group">
-                <!-- Иконка 4: Код -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-yellow-400 cursor-pointer" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 4a1 1 0 011 1v12a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h5zM15 7a1 1 0 011 1v8a1 1 0 01-1 1h-2a1 1 0 01-1-1V8a1 1 0 011-1h2z" clip-rule="evenodd"/>
-                </svg>
-                <div class="absolute inset-0 flex items-center justify-center text-sm text-white bg-gradient-to-r from-blue-500 via-green-500 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg p-4 text-center">
-                    Создание курсов для изучения кодинга
-                </div>
-            </div>
-        </div>
+    <h3 class="text-2xl font-semibold text-center mt-4 text-white hover:text-indigo-400 transition-colors font-poppins">Иван Живоглядов</h3>
+    
+    <div class="member-info text-center p-4 text-white font-poppins">
+        <p class="text-indigo-400">Руководитель проекта</p>
+        <p>Опыт: 10 лет</p>
     </div>
+
+    <!-- Достижения -->
+    <div class="achievements p-4 bg-gray-900 rounded-lg mb-4">
+        <h4 class="text-lg text-white mb-2 font-poppins">Особенности работы:</h4>
+        <ul class="list-disc pl-5 text-sm text-gray-300 space-y-2 font-poppins">
+            <li>Проведение обучающих курсов по веб-разработке с элементами магии!</li>
+            <li>Внедрение новейших технологий, чтобы код был как волшебство!</li>
+            <li>Создание учебных материалов, которые сделают тебя магистром в программировании.</li>
+        </ul>
+    </div>
+
+    <!-- Добавим забавную картинку сбоку -->
+    <div class="fun-fact flex justify-between items-center py-4 bg-gray-900 rounded-lg mb-4">
+        <div class="text-center text-white w-3/4">
+            <p class="text-xl text-yellow-400 font-bold">"Думаешь, что код — это магия? Так и есть!"</p>
+        </div>
+        <img src="https://img.icons8.com/ios/452/code.png" alt="Code Icon" class="w-14 h-14 animate-bounce">
+    </div>
+
+    <!-- Описание персонажа с веселым стилем -->
+    <div class="character-description p-4 bg-gray-900 rounded-b-lg">
+        <p class="text-sm text-gray-300 font-poppins">Иван Живоглядов — профессионал в области веб-разработки, магистр кода и наставник будущих айтишников. За годы работы он не только создал успешные курсы, но и успел стать легендой среди студентов. Если ты хочешь изучить JavaScript, не проходя через испытания, то тебе точно к Ивану!</p>
+    </div>
+
+    <!-- Добавим смешной смайлик для дополнения атмосферы -->
+    <div class="fun-footer text-center py-4">
+        <img src="https://img.icons8.com/ios/452/hacker.png" alt="Hacker Icon" class="w-16 h-16 mx-auto mb-2 animate-pulse">
+        <p class="text-gray-300 text-xl">Время стать мастером кода!</p>
+    </div>
+</div>
+    <!-- Член 2 -->
+<div class="team-member group bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+    <div class="relative">
+        <!-- Смешная шапка: Кролик -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="magic-hat absolute top-0 left-1/2 transform -translate-x-1/2 w-16 text-yellow-400 animate-pulse" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path d="M5 3a2 2 0 012 2v12a2 2 0 01-2 2H3a2 2 0 01-2-2V5a2 2 0 012-2h2zM15 3a2 2 0 012 2v12a2 2 0 01-2 2h-2a2 2 0 01-2-2V5a2 2 0 012-2h2z"/>
+        </svg>
+        <img src="{{ asset('images/member2.jpg') }}" alt="Евгений Белоконов" class="w-full h-64 object-cover rounded-t-lg">
+    </div>
+    <h3 class="text-2xl font-semibold text-center mt-4 text-white hover:text-indigo-400 transition-colors font-poppins">Евгений Белоконов</h3>
+    
+    <div class="member-info text-center p-4 text-white font-poppins">
+        <p class="text-indigo-400">Дизайнер</p>
+        <p>Опыт: 5 лет</p>
+        <p class="text-sm text-gray-300">Дизайн — это искусство, которое улучшает пользовательский опыт, создавая интерфейсы, с которыми приятно взаимодействовать.</p>
+    </div>
+
+    <!-- Добавим веселую цитату и картинку -->
+    <div class="fun-fact text-center py-4 bg-gray-900 rounded-lg mb-4">
+        <p class="text-xl text-yellow-400 font-bold">"Дизайн — это не только красивое оформление, но и удобство использования!"</p>
+        <img src="https://img.icons8.com/ios/452/design.png" alt="Design Icon" class="w-16 h-16 mx-auto mt-2 animate-bounce">
+    </div>
+
+    <!-- Описание персонажа с веселым стилем -->
+    <div class="character-description p-4 bg-gray-900 rounded-b-lg">
+        <p class="text-sm text-gray-300 font-poppins">Евгений Белоконов — эксперт в создании уникальных и пользовательски-дружелюбных интерфейсов. Его дизайны помогают сделать каждый сайт красивым и функциональным. Он разрабатывает курсы, которые позволяют студентам легко освоить основы дизайна и стать настоящими магистрам в этой области!</p>
+    </div>
+
+    <!-- Смешной смайлик -->
+    <div class="fun-footer text-center py-4">
+        <img src="https://img.icons8.com/ios/452/creative-commons.png" alt="Creative Commons Icon" class="w-16 h-16 mx-auto mb-2 animate-pulse">
+        <p class="text-gray-300 text-xl">Дизайн начинается с идеи!</p>
+    </div>
+</div>
+
 
     <!-- Член 3 -->
-    <div class="team-member group bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition duration-300 hover:scale-105">
-        <div class="relative">
-            <!-- Смешная шапка: Шляпа программиста -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="magic-hat absolute top-0 left-1/2 transform -translate-x-1/2 w-16 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path d="M7.293 5.293a1 1 0 011.414 0L10 7.586l1.293-2.293a1 1 0 111.414 1.414L10 10.414l-3.707-3.707a1 1 0 111.414-1.414L9 7.586l1.293-2.293a1 1 0 011.414 0z"/>
-            </svg>
-            <img src="{{ asset('images/member3.jpg') }}" alt="Богдан Демченко" class="w-full h-64 object-cover">
-        </div>
-        <h3 class="text-xl font-semibold text-center mt-4">Богдан Демченко</h3>
-        <div class="member-info text-center p-4">
-            <p class="text-indigo-400">Разработчик</p>
-            <p>Опыт: 7 лет</p>
-            <p>Описание: Быстро и качественно — вот девиз настоящего разработчика!</p>
-        </div>
-        <!-- Достижения -->
-        <div class="achievements flex justify-center space-x-4 mt-4">
-            <div class="relative group">
-                <!-- Иконка 1: Код -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-yellow-400 cursor-pointer" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 4a1 1 0 011 1v12a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h5zM15 7a1 1 0 011 1v8a1 1 0 01-1 1h-2a1 1 0 01-1-1V8a1 1 0 011-1h2z" clip-rule="evenodd"/>
-                </svg>
-                <div class="absolute inset-0 flex items-center justify-center text-sm text-white bg-gradient-to-r from-blue-500 via-green-500 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg p-4 text-center">
-                    7 лет в разработке веб-приложений
-                </div>
-            </div>
-            <div class="relative group">
-                <!-- Иконка 2: Шестерёнки -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-yellow-400 cursor-pointer" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                    <path d="M4.293 5.293a1 1 0 011.414 0L7 7.586l1.293-2.293a1 1 0 111.414 1.414L7 10.414l-3.707-3.707a1 1 0 111.414-1.414L6 7.586l1.293-2.293a1 1 0 011.414 0z"/>
-                </svg>
-                <div class="absolute inset-0 flex items-center justify-center text-sm text-white bg-gradient-to-r from-blue-500 via-green-500 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg p-4 text-center">
-                    Опыт в разработке сложных проектов для IT-курсов
-                </div>
-            </div>
-        </div>
+<!-- Член 3 -->
+<div class="team-member group bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+    <div class="relative">
+        <!-- Смешная шапка: Шляпа программиста -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="magic-hat absolute top-0 left-1/2 transform -translate-x-1/2 w-16 text-yellow-400 animate-pulse" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path d="M7.293 5.293a1 1 0 011.414 0L10 7.586l1.293-2.293a1 1 0 111.414 1.414L10 10.414l-3.707-3.707a1 1 0 111.414-1.414L9 7.586l1.293-2.293a1 1 0 011.414 0z"/>
+        </svg>
+        <img src="{{ asset('images/member3.jpg') }}" alt="Богдан Демченко" class="w-full h-64 object-cover rounded-t-lg">
     </div>
+    <h3 class="text-2xl font-semibold text-center mt-4 text-white hover:text-indigo-400 transition-colors font-poppins">Богдан Демченко</h3>
+    
+    <div class="member-info text-center p-4 text-white font-poppins">
+        <p class="text-indigo-400">Разработчик</p>
+        <p>Опыт: 7 лет</p>
+        <p class="text-sm text-gray-300">Быстро и качественно — вот девиз настоящего разработчика!</p>
+    </div>
+
+    <!-- Добавим веселую цитату и картинку -->
+    <div class="fun-fact text-center py-4 bg-gray-900 rounded-lg mb-4">
+        <p class="text-xl text-yellow-400 font-bold">"Чем больше кода — тем лучше работает система!"</p>
+        <img src="https://img.icons8.com/ios/452/code.png" alt="Code Icon" class="w-16 h-16 mx-auto mt-2 animate-bounce">
+    </div>
+
+    <!-- Описание персонажа с веселым стилем -->
+    <div class="character-description p-4 bg-gray-900 rounded-b-lg">
+        <p class="text-sm text-gray-300 font-poppins">Богдан Демченко — разработчик с опытом в создании веб-приложений. Он специализируется на разработке сложных и надежных систем для IT-курсов. Его девиз — оптимизация и производительность на всех уровнях. С ним можно легко пройти любой путь от разработки до запуска!</p>
+    </div>
+
+    <!-- Смешной смайлик -->
+    <div class="fun-footer text-center py-4">
+        <img src="https://img.icons8.com/ios/452/creative-commons.png" alt="Creative Commons Icon" class="w-16 h-16 mx-auto mb-2 animate-pulse">
+        <p class="text-gray-300 text-xl">Программирование — это искусство!</p>
+    </div>
+</div>
+
 
     <!-- Член 4 -->
     <div class="team-member group bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition duration-300 hover:scale-105">
