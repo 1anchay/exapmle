@@ -1,27 +1,34 @@
 <?php
-namespace Database\Seeders;
 
-use App\Models\Review;
-use App\Models\User;
-use App\Models\Product;
-use Illuminate\Database\Seeder;
+namespace App\Models;
 
-class ReviewSeeder extends Seeder
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Review extends Model
 {
-    public function run()
-    {
-        $users = User::all();
-        $products = Product::all();
+    use HasFactory;
 
-        foreach ($users as $user) {
-            foreach ($products->random(3) as $product) {
-                Review::create([
-                    'user_id' => $user->id,
-                    'product_id' => $product->id,
-                    'review' => fake()->sentence(10),
-                    'rating' => rand(1, 5),
-                ]);
-            }
-        }
+    // Указываем таблицу, если она не называется по умолчанию
+    // protected $table = 'reviews';
+
+    // Указываем поля, которые можно массово заполнять
+    protected $fillable = [
+        'user_id',
+        'product_id',
+        'review',
+        'rating',
+    ];
+
+    // Определение связи с пользователем
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    // Определение связи с продуктом
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
     }
 }

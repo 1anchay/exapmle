@@ -121,7 +121,7 @@
                 <ul class="flex space-x-6 sm:space-x-8">
                     <li><a href="{{ route('main') }}" class="nav-link text-white hover:text-teal-300 transition-all">Главная</a></li>
                     <li><a href="article.php" class="nav-link text-white hover:text-teal-300 transition-all">Курсы</a></li>
-                    <li><a href="{{ route('comments.index') }}" class="nav-link text-white hover:text-teal-300 transition-all">Сообщество</a></li>
+                    <li><a href="{{ route('reviews') }}" class="nav-link text-white hover:text-teal-300 transition-all">Сообщество</a></li>
                     <li><a href="{{ route('register') }}" class="nav-link text-white hover:text-teal-300 transition-all">Регистрация</a></li>
                 </ul>
             </nav>

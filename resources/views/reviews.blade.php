@@ -1,106 +1,80 @@
-<!-- resources/views/reviews.blade.php -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Отзывы студентов</title>
-    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.js"></script>
+    <title>Добавить комментарий</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
 
-    <!-- Включаем header -->
-    @include('hader')
+    <!-- Контейнер страницы -->
+    <div class="container mx-auto p-6">
 
-    <!-- Основной контейнер с отзывами -->
-    <div class="container mx-auto px-4 py-8">
         <!-- Заголовок страницы -->
-        <div class="text-center mb-10">
-            <h2 class="text-4xl font-bold text-teal-600">Комментарии студентов</h2>
-            <p class="text-lg text-gray-600 mt-2">Присоединяйтесь к обсуждениям, делитесь мнениями и помогайте друг другу!</p>
-        </div>
+        <h1 class="text-3xl font-semibold mb-6">Добавить комментарий</h1>
 
-        <!-- Успешное сообщение -->
-        <div id="success-message" class="bg-green-100 text-green-800 p-4 rounded-md mb-6 hidden">
-            <strong>Успех!</strong> Ваш комментарий был успешно добавлен.
+        <!-- Уведомление об успешном добавлении комментария -->
+        <div id="success-message" class="hidden bg-green-500 text-white p-4 rounded mb-6">
+            Ваш комментарий успешно добавлен!
         </div>
 
         <!-- Форма для добавления комментария -->
-        <div class="bg-white shadow-lg rounded-lg p-6 mb-8">
-            <h3 class="text-xl font-semibold mb-4 text-teal-600">Оставьте комментарий</h3>
+        <div class="bg-white p-6 rounded shadow-md">
             <form id="comment-form">
-                <textarea id="content" class="w-full border border-gray-300 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-teal-500" rows="6" placeholder="Напишите свой комментарий..." required></textarea>
-                <button type="submit" class="mt-4 bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700 transition-all duration-300 transform hover:scale-105">Отправить</button>
+                <div class="mb-4">
+                    <label for="comment" class="block text-sm font-semibold text-gray-700">Ваш комментарий:</label>
+                    <textarea id="comment" name="content" rows="4" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" placeholder="Напишите свой комментарий..." required></textarea>
+                </div>
+
+                <div class="mb-4">
+                    <button type="submit" class="px-4 py-2 bg-teal-500 text-white rounded-md hover:bg-teal-600 transition-all">Отправить</button>
+                </div>
             </form>
         </div>
 
         <!-- Список комментариев -->
-        <div id="comments-list" class="space-y-6">
-            <!-- Комментарии будут вставляться сюда через JavaScript -->
+        <div class="mt-10">
+            <h2 class="text-2xl font-semibold mb-4">Комментарии</h2>
+
+            <div id="comments-list" class="space-y-4">
+                <!-- Здесь будут отображаться комментарии -->
+            </div>
         </div>
+
     </div>
 
-    <!-- Включаем footer -->
-    @include('includes.footer')
-
-    <!-- Подключение скрипта для обработки формы -->
+    <!-- Скрипт для обработки формы -->
     <script>
-        // Пример комментариев
-        const comments = [
-            { name: 'Иван Иванов', content: 'Отличный курс! Много полезной информации.' },
-            { name: 'Мария Петрова', content: 'Прекрасный опыт обучения, рекомендую всем!' }
-        ];
+        document.getElementById('comment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
 
-        // Функция для отображения комментариев
-        function renderComments() {
-            const commentsList = document.getElementById('comments-list');
-            commentsList.innerHTML = ''; // Очищаем текущие комментарии
+            // Получаем значение комментария
+            const commentContent = document.getElementById('comment').value;
 
-            comments.forEach(comment => {
-                const commentDiv = document.createElement('div');
-                commentDiv.classList.add('bg-gray-100', 'p-6', 'rounded-lg', 'shadow-lg', 'hover:shadow-xl', 'transition', 'duration-300');
-
-                const commentContent = `
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-teal-600 text-white rounded-full flex items-center justify-center text-2xl mr-4">
-                            ${comment.name.charAt(0)} <!-- Первая буква имени -->
-                        </div>
-                        <div>
-                            <p class="text-lg font-semibold text-teal-600">${comment.name}</p>
-                            <p class="text-sm text-gray-500">Только что</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-700">${comment.content}</p>
-                `;
-
-                commentDiv.innerHTML = commentContent;
-                commentsList.appendChild(commentDiv);
-            });
-        }
-
-        // Отображаем комментарии при загрузке страницы
-        renderComments();
-
-        // Обработчик отправки формы
-        document.getElementById('comment-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Отменяем стандартное поведение формы
-
-            // Получаем текст комментария
-            const content = document.getElementById('content').value;
-
-            if (content) {
-                // Добавляем новый комментарий в массив
-                comments.push({ name: 'Новый пользователь', content });
-
-                // Очистить поле ввода
-                document.getElementById('content').value = '';
-
-                // Показать сообщение об успехе
-                document.getElementById('success-message').classList.remove('hidden');
-
-                // Перерисовать список комментариев
-                renderComments();
+            // Если комментарий пустой, то не отправляем
+            if (!commentContent.trim()) {
+                alert('Комментарий не может быть пустым.');
+                return;
             }
+
+            // Отправляем новый комментарий
+            const newComment = document.createElement('div');
+            newComment.classList.add('bg-white', 'p-4', 'border', 'rounded-lg', 'shadow-sm');
+            newComment.innerHTML = `
+                <h3 class="text-xl font-semibold">Пользователь</h3>
+                <p class="text-gray-700 mt-2">${commentContent}</p>
+                <div class="mt-2 text-sm text-gray-500">Только что</div>
+            `;
+
+            // Добавляем новый комментарий в список
+            document.getElementById('comments-list').appendChild(newComment);
+
+            // Показываем уведомление об успешном добавлении
+            document.getElementById('success-message').classList.remove('hidden');
+
+            // Очищаем форму
+            document.getElementById('comment-form').reset();
         });
     </script>
 

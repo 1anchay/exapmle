@@ -73,3 +73,6 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
     Route::get('/comments', [CommentController::class, 'index'])->name('comments.index');
 });
+// Маршрут для страницы с отзывами
+Route::get('/reviews-page', [ReviewController::class, 'index'])->name('reviews.page');
+
