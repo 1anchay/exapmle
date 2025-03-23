@@ -2,52 +2,41 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
-    // Конструктор контроллера
+    use AuthenticatesUsers;
+
+    /**
+     * Где перенаправлять пользователей после логина.
+     *
+     * @var string
+     */
+    protected $redirectTo = '/main';
+
+    /**
+     * Создание нового контроллера
+     */
     public function __construct()
     {
-        // Если вы хотите контролировать доступ, сделайте это через маршруты
-        // $this->middleware('guest')->except('logout'); // Уберите или закомментируйте это
+        // В этом случае middleware уже применяется автоматически через trait AuthenticatesUsers
+        // Не нужно явно прописывать middleware здесь
     }
 
-    // Метод для отображения формы входа
-    public function showLoginForm()
+    /**
+     * Перенаправление после аутентификации
+     */
+    public function redirectTo()
     {
-        return view('auth.login'); // Убедитесь, что этот view существует
-    }
-
-    // Метод для аутентификации пользователя
-    public function login(Request $request)
-    {
-        // Валидация данных с формы входа
-        $credentials = $request->validate([
-            'email' => 'required|email',
-            'password' => 'required',
-        ]);
-
-        // Попытка аутентификации
-        if (Auth::attempt($credentials)) {
-            // Если аутентификация прошла успешно, перенаправляем на домашнюю страницу или другую
-            return redirect()->intended(route('main'));
+        // Проверяем роль пользователя
+        if (Auth::user()->is_admin) {
+            // Если админ, перенаправляем на панель администратора
+            return '/admin/dashboard'; // Укажите ваш маршрут для админ панели
         }
 
-        // Если не удалось аутентифицировать, возвращаем на форму входа с ошибкой
-        return back()->withErrors([
-            'email' => 'Неверные учетные данные.',
-        ]);
-    }
-
-    // Метод для выхода пользователя
-    public function logout(Request $request)
-    {
-        Auth::logout();
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
-        return redirect('/main');
+        // В противном случае, перенаправляем на обычную домашнюю страницу
+        return '/main';
     }
 }
-

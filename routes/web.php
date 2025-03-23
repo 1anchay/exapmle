@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\RegisterController;
@@ -55,3 +55,14 @@ Route::get('/it-courses', [ITCourseController::class, 'index'])->name('it.course
 Route::get('/first-steps', function () {
     return view('first-steps');
 })->name('first.steps');
+
+
+// Для пользователей (отправка сообщений)
+Route::post('/messages', [MessageController::class, 'store']);
+
+// Для администраторов (чтение сообщений)
+Route::get('/admin/messages', [MessageController::class, 'getMessages']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
