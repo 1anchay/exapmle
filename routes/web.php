@@ -8,6 +8,7 @@ use App\Http\Controllers\MainController;
 use App\Http\Controllers\MyPlaceController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\ITCourseController;
+use App\Http\Controllers\CommentController;
 // Главная страница
 Route::get('/', function () {
     return view('main'); 
@@ -66,3 +67,9 @@ Route::get('/admin/messages', [MessageController::class, 'getMessages']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::middleware(['auth'])->group(function () {
+    Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
+    Route::get('/comments', [CommentController::class, 'index'])->name('comments.index');
+});

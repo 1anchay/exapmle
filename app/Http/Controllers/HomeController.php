@@ -1,5 +1,6 @@
 <?php
 
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -7,22 +8,24 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     /**
-     * Create a new controller instance.
+     * Создание нового экземпляра контроллера.
      *
      * @return void
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // Использование middleware
+        $this->middleware('auth');  // Применяем стандартное middleware для авторизации
     }
 
     /**
-     * Show the application dashboard.
+     * Показать главное приложение.
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
     {
-        return view('home');
+        return view('main');  // Отображаем представление "main"
     }
 }
+
