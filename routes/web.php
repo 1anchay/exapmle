@@ -75,4 +75,6 @@ Route::middleware(['auth'])->group(function () {
 });
 // Маршрут для страницы с отзывами
 Route::get('/reviews-page', [ReviewController::class, 'index'])->name('reviews.page');
+Route::get('/reviews', [ReviewController::class, 'index'])->name('reviews');
+
 
