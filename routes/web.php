@@ -76,6 +76,8 @@ Route::get('/comments-page', function () {
 
 // Маршрут для страницы с отзывами
 Route::get('/reviews-page', [ReviewController::class, 'index'])->name('reviews.page');
+Route::get('/reviews', [ReviewController::class, 'index'])->name('reviews');
+
 
 Route::get('/comments', [CommentController::class, 'index'])->name('comments'); // доп. alias
 // Маршруты для комментариев (нужен middleware auth для защиты)
