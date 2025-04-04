@@ -105,3 +105,7 @@ Route::post('/email/verify', function () {
 
     return response()->json(['message' => 'Письмо для подтверждения отправлено.']);
 })->name('verification.send');
+use App\Http\Controllers\PasswordController; // Убедитесь, что контроллер существует
+
+// Маршрут для страницы редактирования пароля
+Route::get('/password/edit', [PasswordController::class, 'edit'])->name('password.edit');

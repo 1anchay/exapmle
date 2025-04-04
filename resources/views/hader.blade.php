@@ -113,8 +113,9 @@
 
             <!-- Логотип -->
             <div class="logo">
-                <img src="images/logotyp.jpg" alt="Логотип EdTech" class="h-12 rounded-lg transition-all glow-effect">
-            </div>
+    <img src="{{ asset('images/logotyp.jpg') }}" alt="Логотип EdTech" class="h-12 rounded-lg transition-all glow-effect">
+</div>
+
 
             <!-- Навигация -->
             <!-- Навигация -->
@@ -341,9 +342,14 @@
             </div>
             <li>
     <a href="{{ route('profile.edit') }}">
-        <img src="{{ Auth::user()->avatar ?? 'https://via.placeholder.com/50' }}" alt="Profile Image" class="w-12 h-12 rounded-full object-cover">
+        <img 
+            src="{{ Auth::user()->avatar ? asset('storage/' . Auth::user()->avatar) : 'https://via.placeholder.com/50' }}" 
+            alt="Profile Image" 
+            class="w-12 h-12 rounded-full object-cover"
+        >
     </a>
 </li>
+
             <!-- Кнопка переключения темы -->
             <button id="theme-toggle"
                 class="theme-btn p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-300 glow-effect">

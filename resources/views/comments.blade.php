@@ -136,7 +136,8 @@
                     <div class="comment-card">
                         <div class="flex items-center space-x-4">
                             <!-- Картинка пользователя -->
-                            <img src="{{ $comment->user->avatar ?? 'https://via.placeholder.com/50' }}" alt="user avatar" class="avatar">
+                            <img src="{{ $comment->user->avatar ? asset('storage/' . $comment->user->avatar) : 'https://via.placeholder.com/50' }}" alt="user avatar" class="avatar">
+
                             <div>
                                 <p class="font-semibold text-gray-800">{{ $comment->user->name }}</p>
                                 <p class="text-sm text-gray-500">{{ $comment->created_at->format('d M Y') }}</p>
