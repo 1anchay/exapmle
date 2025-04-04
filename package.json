@@ -19,6 +19,9 @@
         "vite": "^6.0.11"
     },
     "dependencies": {
-        "postcss-cli": "^11.0.1"
+        "@heroicons/react": "^2.2.0",
+        "postcss-cli": "^11.0.1",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0"
     }
 }

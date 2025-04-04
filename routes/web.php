@@ -69,10 +69,19 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-Route::middleware(['auth'])->group(function () {
-    Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
-    Route::get('/comments', [CommentController::class, 'index'])->name('comments.index');
-});
+// routes/web.php
+Route::get('/comments-page', function () {
+    return view('comments'); // resources/views/comments.blade.php
+})->name('comments.page');
+
 // Маршрут для страницы с отзывами
 Route::get('/reviews-page', [ReviewController::class, 'index'])->name('reviews.page');
 
+Route::get('/comments', [CommentController::class, 'index'])->name('comments'); // доп. alias
+// Маршруты для комментариев (нужен middleware auth для защиты)
+Route::middleware(['auth'])->group(function () {
+    // Маршрут для добавления нового комментария
+    Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
+    // Маршрут для просмотра комментариев
+    Route::get('/comments', [CommentController::class, 'index'])->name('comments.index');
+});

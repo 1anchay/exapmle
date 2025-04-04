@@ -1,55 +1,63 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="ru">
+@include('hader') <!-- Подключение header -->
 
-@section('content')
-@include('hader')
+<head>
+    <meta charset="UTF-8">
+    <title>Комментарии — IT Курсы</title>
+    @viteReactRefresh
+    @vite(['resources/js/app.js'])
+    <!-- Tailwind CSS + дополнительные стили -->
+    <style>
+        body {
+            background: linear-gradient(to bottom, #f3f4f6, #dbeafe);
+        }
+    </style>
+</head>
 
-<div class="container mx-auto px-4 py-8">
-    <div class="text-center mb-10">
-        <h2 class="text-4xl font-bold text-teal-600">Комментарии студентов</h2>
-        <p class="text-lg text-gray-600 mt-2">Присоединяйтесь к обсуждениям, делитесь мнениями и помогайте друг другу!</p>
-    </div>
+<body class="bg-gradient-to-b from-blue-50 to-blue-100 font-sans text-gray-800">
+    <!-- Контейнер с отступами -->
+    <div class="max-w-3xl mx-auto p-6 mt-10">
+        <!-- Заголовок -->
+        <h1 class="text-3xl font-semibold text-center text-blue-900 mb-6">Комментарии пользователей</h1>
 
-    @if(session('success'))
-        <div class="bg-green-100 text-green-800 p-4 rounded-md mb-6 shadow-md">
-            <strong>Успех!</strong> {{ session('success') }}
-        </div>
-    @endif
-
-    <div class="bg-white shadow-lg rounded-lg p-6 mb-8">
-        @auth
-            <h3 class="text-xl font-semibold mb-4 text-teal-600">Оставьте комментарий</h3>
+        <!-- Форма для отправки комментария -->
+        <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
+            <h2 class="text-xl font-medium text-gray-700 mb-4">Добавить комментарий</h2>
             <form action="{{ route('comments.store') }}" method="POST">
                 @csrf
-                <textarea name="content" class="w-full border border-gray-300 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-teal-500" rows="6" placeholder="Напишите свой комментарий..." required></textarea>
-                <button type="submit" class="mt-4 bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700 transition-all duration-300 transform hover:scale-105">Отправить</button>
+                <textarea name="content" rows="4" class="w-full border border-gray-300 rounded-lg p-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Оставьте ваш комментарий"></textarea>
+                <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">Отправить</button>
             </form>
-        @else
-            <p class="text-gray-600 mb-4">Войдите, чтобы оставить комментарий.</p>
-        @endauth
-    </div>
+        </div>
 
-    <div class="space-y-6">
-        @foreach($comments as $comment)
-            <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-teal-600 text-white rounded-full flex items-center justify-center text-2xl mr-4">
-                        {{ substr($comment->user->name, 0, 1) }}
+        <!-- Комментарии других пользователей -->
+        <div class="space-y-6">
+            <h2 class="text-xl font-medium text-gray-700">Комментарии:</h2>
+            <!-- Выводим комментарии с использованием пагинации -->
+            @foreach ($comments as $comment)
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <div class="flex items-center space-x-4">
+                        <!-- Картинка пользователя -->
+                        <img src="{{ $comment->user->avatar ?? 'https://via.placeholder.com/50' }}" alt="user avatar" class="w-12 h-12 rounded-full">
+                        <div>
+                            <p class="font-semibold text-gray-800">{{ $comment->user->name }}</p>
+                            <p class="text-sm text-gray-500">{{ $comment->created_at->format('d M Y') }}</p>
+                        </div>
                     </div>
-                    <div>
-                        <p class="text-lg font-semibold text-teal-600">{{ $comment->user->name }}</p>
-                        <p class="text-sm text-gray-500">{{ $comment->created_at->diffForHumans() }}</p>
-                    </div>
+                    <p class="mt-4 text-gray-700">{{ $comment->content }}</p>
                 </div>
-                <p class="text-gray-700">{{ $comment->content }}</p>
+            @endforeach
+
+            <!-- Пагинация -->
+            <div class="mt-6">
+                {{ $comments->links() }}
             </div>
-        @endforeach
+        </div>
     </div>
 
-    <!-- Страница пагинации (если нужно) -->
-    <div class="mt-6">
-        {{ $comments->links() }}
-    </div>
-</div>
+    <!-- Подключаем footer -->
+    @include('footer')
+</body>
 
-@include('footer')
-@endsection
+</html>
