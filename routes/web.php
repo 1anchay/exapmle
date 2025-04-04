@@ -9,6 +9,7 @@ use App\Http\Controllers\MyPlaceController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\ITCourseController;
 use App\Http\Controllers\CommentController;
+
 // Главная страница
 Route::get('/', function () {
     return view('main'); 
@@ -87,3 +88,20 @@ Route::middleware(['auth'])->group(function () {
     // Маршрут для просмотра комментариев
     Route::get('/comments', [CommentController::class, 'index'])->name('comments.index');
 });
+use App\Http\Controllers\ProfileController;
+
+Route::middleware('auth')->group(function () {
+    // Страница редактирования профиля
+    Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
+    
+    // Обновление данных профиля
+    Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
+});
+Route::post('/email/verify', function () {
+    // Отправляем запрос на подтверждение email, если email не подтвержден
+    if (Auth::user() && !Auth::user()->hasVerifiedEmail()) {
+        Auth::user()->sendEmailVerificationNotification();
+    }
+
+    return response()->json(['message' => 'Письмо для подтверждения отправлено.']);
+})->name('verification.send');

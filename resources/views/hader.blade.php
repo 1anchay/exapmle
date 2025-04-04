@@ -117,14 +117,16 @@
             </div>
 
             <!-- Навигация -->
-            <nav>
-                <ul class="flex space-x-6 sm:space-x-8">
-                    <li><a href="{{ route('main') }}" class="nav-link text-white hover:text-teal-300 transition-all">Главная</a></li>
-                    <li><a href="article.php" class="nav-link text-white hover:text-teal-300 transition-all">Курсы</a></li>
-                    <li><a href="{{ route('comments.index') }}" class="nav-link text-white hover:text-teal-300 transition-all">Сообщество</a></li>
-                    <li><a href="{{ route('register') }}" class="nav-link text-white hover:text-teal-300 transition-all">Регистрация</a></li>
-                </ul>
-            </nav>
+            <!-- Навигация -->
+<nav>
+    <ul class="flex space-x-6 sm:space-x-8">
+        <li><a href="{{ route('main') }}" class="nav-link text-white hover:text-teal-300 transition-all">Главная</a></li>
+        <li><a href="article.php" class="nav-link text-white hover:text-teal-300 transition-all">Курсы</a></li>
+        <li><a href="{{ route('comments.index') }}" class="nav-link text-white hover:text-teal-300 transition-all">Сообщество</a></li>
+        <li><a href="{{ route('register') }}" class="nav-link text-white hover:text-teal-300 transition-all">Регистрация</a></li>
+        <!-- Добавляем ссылку на редактирование профиля с изображением -->
+
+</nav>
 
             <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet"></script>
 
@@ -337,7 +339,11 @@
                     </form>
                 @endguest
             </div>
-
+            <li>
+    <a href="{{ route('profile.edit') }}">
+        <img src="{{ Auth::user()->avatar ?? 'https://via.placeholder.com/50' }}" alt="Profile Image" class="w-12 h-12 rounded-full object-cover">
+    </a>
+</li>
             <!-- Кнопка переключения темы -->
             <button id="theme-toggle"
                 class="theme-btn p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-300 glow-effect">
