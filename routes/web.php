@@ -109,3 +109,4 @@ use App\Http\Controllers\PasswordController; // Убедитесь, что ко�
 
 // Маршрут для страницы редактирования пароля
 Route::get('/password/edit', [PasswordController::class, 'edit'])->name('password.edit');
+Auth::routes(['verify' => true]);

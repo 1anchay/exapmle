@@ -343,7 +343,8 @@
             <li>
     <a href="{{ route('profile.edit') }}">
         <img 
-            src="{{ Auth::user()->avatar ? asset('storage/' . Auth::user()->avatar) : 'https://via.placeholder.com/50' }}" 
+        src="{{ optional(Auth::user())->avatar ? asset('storage/' . Auth::user()->avatar) : 'https://via.placeholder.com/50' }}"
+
             alt="Profile Image" 
             class="w-12 h-12 rounded-full object-cover"
         >

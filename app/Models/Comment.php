@@ -11,6 +11,10 @@ class Comment extends Model {
     protected $fillable = ['user_id', 'content'];
 
     public function user() {
-        return $this->belongsTo(User::class);
+        // Эта строка добавит "заглушку", если пользователь не найден
+        return $this->belongsTo(User::class)->withDefault([
+            'name' => 'Аноним',
+            'avatar' => null,
+        ]);
     }
 }
