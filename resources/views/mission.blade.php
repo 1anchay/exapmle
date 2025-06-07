@@ -103,7 +103,7 @@
             <div class="lg:w-1/2 relative">
                 <div class="relative bg-gray-800/50 rounded-2xl overflow-hidden border-2 border-gray-700/50 hover:border-blue-400/30 transition-all duration-300 shadow-2xl h-[400px]">
                     <model-viewer 
-                        src="/models/model4.glb"
+                        src="/models/model2.glb"
                         alt="Тактическое оружие в VR"
                         ar
                         ar-modes="webxr scene-viewer quick-look"
