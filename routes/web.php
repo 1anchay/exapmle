@@ -28,8 +28,10 @@ Route::middleware('auth')->post('logout', [LoginController::class, 'logout'])->n
 
 // Страница my_page
 Route::get('/my_page', [MyPlaceController::class, 'index'])->name('my_page');
-
-// Страница команды
+Route::get('/mission', function () {
+    return view('mission'); 
+})->name('mission');
+// Страница командыvb
 Route::get('/team', function () {
     return view('team'); 
 })->name('team');
@@ -38,7 +40,9 @@ Route::get('/team', function () {
 Route::get('/history', function () {
     return view('history');
 })->name('history');
-
+Route::get('/curs', function () {
+    return view('curs');
+})->name('curs');
 // Страница для демонстрации Tailwind CSS
 Route::get('/tailwind-demo', function () {
     return view('tailwind-demo');

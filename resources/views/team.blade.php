@@ -304,54 +304,7 @@
                         </div>
                     </div>
 
-                    <!-- Member 4 -->
-                    <div class="team-card rounded-xl overflow-hidden transition-all duration-300 hover:shadow-pink-500/20" data-category="managers">
-                        <div class="relative h-64 bg-gradient-to-br from-pink-900/50 to-gray-900 flex items-center justify-center">
-                            <img src="{{ asset('images/member4.jpg') }}" alt="Анна Светлова" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-                            <div class="absolute bottom-4 left-4">
-                                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-pink-600 text-white">
-                                    <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-                                    </svg>
-                                    Менеджер
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-white mb-1">Анна Светлова</h3>
-                            <p class="text-pink-400 mb-4">Менеджер проектов</p>
-                            
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="skill-badge px-2 py-1 bg-gray-800 text-xs rounded-full text-gray-300">Scrum</span>
-                                <span class="skill-badge px-2 py-1 bg-gray-800 text-xs rounded-full text-gray-300">Agile</span>
-                                <span class="skill-badge px-2 py-1 bg-gray-800 text-xs rounded-full text-gray-300">Kanban</span>
-                            </div>
-                            
-                            <p class="text-gray-400 text-sm mb-4">Организует рабочие процессы так, чтобы команда могла сосредоточиться на качестве продукта.</p>
-                            
-                            <div class="flex space-x-3">
-                                <a href="#" class="social-icon w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center text-pink-400 hover:text-white hover:bg-pink-600">
-                                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                                <a href="#" class="social-icon w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center text-pink-400 hover:text-white hover:bg-pink-600">
-                                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                                <a href="#" class="social-icon w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center text-pink-400 hover:text-white hover:bg-pink-600">
-                                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    
         </section>
 
         <!-- Join Section -->
@@ -444,147 +397,260 @@
                 </div>
             </div>
         </section>
-
-        <!-- Stats Section -->
-        <section class="py-16 bg-gray-800">
-            <div class="container mx-auto px-6">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                    <div class="p-6 bg-gray-900/50 rounded-xl backdrop-blur-sm">
-                        <div class="text-4xl font-bold text-indigo-400 mb-2">10+</div>
-                        <div class="text-gray-400">Лет опыта</div>
+<!-- Stats Section -->
+<section class="py-16 bg-gradient-to-b from-purple-900/80 to-gray-900">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Stat 1 -->
+            <div class="relative overflow-hidden rounded-xl border border-purple-500/30 bg-gradient-to-br from-purple-900/50 to-gray-900 hover:border-purple-400 transition-all duration-300 group">
+                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20"></div>
+                <div class="relative p-6 text-center z-10">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-20 h-20 bg-purple-800/30 rounded-full flex items-center justify-center border border-purple-500/30 backdrop-blur-sm">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" alt="Years" class="w-12 h-12 object-contain">
+                        </div>
                     </div>
-                    <div class="p-6 bg-gray-900/50 rounded-xl backdrop-blur-sm">
-                        <div class="text-4xl font-bold text-indigo-400 mb-2">50+</div>
-                        <div class="text-gray-400">Проектов</div>
-                    </div>
-                    <div class="p-6 bg-gray-900/50 rounded-xl backdrop-blur-sm">
-                        <div class="text-4xl font-bold text-indigo-400 mb-2">1000+</div>
-                        <div class="text-gray-400">Студентов</div>
-                    </div>
-                    <div class="p-6 bg-gray-900/50 rounded-xl backdrop-blur-sm">
-                        <div class="text-4xl font-bold text-indigo-400 mb-2">24/7</div>
-                        <div class="text-gray-400">Поддержка</div>
-                    </div>
+                    <div class="text-4xl font-bold text-white mb-2 font-russo bg-gradient-to-r from-purple-400 to-white bg-clip-text text-transparent">10+</div>
+                    <div class="text-purple-200 text-sm uppercase tracking-wider">Лет на VR-фронте</div>
+                </div>
+                <div class="absolute bottom-0 right-0 w-24 h-24 opacity-20 group-hover:opacity-40 transition-opacity duration-300">
+                    <img src="https://cdn-icons-png.flaticon.com/512/821/821365.png" alt="Military icon" class="w-full h-full object-contain">
                 </div>
             </div>
-        </section>
 
-        <!-- Plans Section -->
-        <section class="py-16 bg-gray-900">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4 font-poppins">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500">Наши планы</span>
-                    </h2>
-                    <p class="text-lg text-gray-400 max-w-2xl mx-auto">
-                        Мы постоянно развиваемся и работаем над новыми проектами
-                    </p>
+            <!-- Stat 2 -->
+            <div class="relative overflow-hidden rounded-xl border border-purple-500/30 bg-gradient-to-br from-purple-900/50 to-gray-900 hover:border-purple-400 transition-all duration-300 group">
+                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagonal-striped-brick.png')] opacity-20"></div>
+                <div class="relative p-6 text-center z-10">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-20 h-20 bg-purple-800/30 rounded-full flex items-center justify-center border border-purple-500/30 backdrop-blur-sm">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3520/3520766.png" alt="Operations" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+                    <div class="text-4xl font-bold text-white mb-2 font-russo bg-gradient-to-r from-purple-400 to-white bg-clip-text text-transparent">50+</div>
+                    <div class="text-purple-200 text-sm uppercase tracking-wider">Боевых симуляторов</div>
                 </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700 hover:border-indigo-500 transition-all duration-300">
-                        <div class="flex justify-center mb-6">
-                            <div class="w-16 h-16 bg-indigo-900/30 rounded-full flex items-center justify-center text-indigo-400">
-                                <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-                                </svg>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-4 text-center">Новые курсы</h3>
-                        <p class="text-gray-400 text-center mb-6">Разработка образовательных программ по самым востребованным направлениям</p>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start">
-                                <svg class="flex-shrink-0 h-5 w-5 text-indigo-400 mr-2 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                </svg>
-                                <span>Blockchain разработка</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="flex-shrink-0 h-5 w-5 text-indigo-400 mr-2 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                </svg>
-                                <span>AI и машинное обучение</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="flex-shrink-0 h-5 w-5 text-indigo-400 mr-2 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                </svg>
-                                <span>Кибербезопасность</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700 hover:border-purple-500 transition-all duration-300">
-                        <div class="flex justify-center mb-6">
-                            <div class="w-16 h-16 bg-purple-900/30 rounded-full flex items-center justify-center text-purple-400">
-                                <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
-                                </svg>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-4 text-center">Платформа</h3>
-                        <p class="text-gray-400 text-center mb-6">Совершенствование образовательной платформы для лучшего опыта обучения</p>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start">
-                                <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-2 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                </svg>
-                                <span>Интерактивные задания</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-2 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                </svg>
-                                <span>Система геймификации</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-2 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                </svg>
-                                <span>Персональные рекомендации</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700 hover:border-blue-500 transition-all duration-300">
-                        <div class="flex justify-center mb-6">
-                            <div class="w-16 h-16 bg-blue-900/30 rounded-full flex items-center justify-center text-blue-400">
-                                <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd" />
-                                    <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
-                                </svg>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-4 text-center">Сообщество</h3>
-                        <p class="text-gray-400 text-center mb-6">Развитие профессионального сообщества выпускников и партнёров</p>
-                        <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start">
-                                <svg class="flex-shrink-0 h-5 w-5 text-blue-400 mr-2 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                </svg>
-                                <span>Мероприятия и хакатоны</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="flex-shrink-0 h-5 w-5 text-blue-400 mr-2 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                </svg>
-                                <span>Программа наставничества</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="flex-shrink-0 h-5 w-5 text-blue-400 mr-2 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                </svg>
-                                <span>Партнёрства с компаниями</span>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="absolute bottom-0 right-0 w-24 h-24 opacity-20 group-hover:opacity-40 transition-opacity duration-300">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3520/3520772.png" alt="VR icon" class="w-full h-full object-contain">
                 </div>
             </div>
-        </section>
+
+            <!-- Stat 3 -->
+            <div class="relative overflow-hidden rounded-xl border border-purple-500/30 bg-gradient-to-br from-purple-900/50 to-gray-900 hover:border-purple-400 transition-all duration-300 group">
+                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagmonds.png')] opacity-20"></div>
+                <div class="relative p-6 text-center z-10">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-20 h-20 bg-purple-800/30 rounded-full flex items-center justify-center border border-purple-500/30 backdrop-blur-sm">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" alt="Soldiers" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+                    <div class="text-4xl font-bold text-white mb-2 font-russo bg-gradient-to-r from-purple-400 to-white bg-clip-text text-transparent">1000+</div>
+                    <div class="text-purple-200 text-sm uppercase tracking-wider">Подготовленных бойцов</div>
+                </div>
+                <div class="absolute bottom-0 right-0 w-24 h-24 opacity-20 group-hover:opacity-40 transition-opacity duration-300">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3132/3132739.png" alt="Soldier icon" class="w-full h-full object-contain">
+                </div>
+            </div>
+
+            <!-- Stat 4 -->
+            <div class="relative overflow-hidden rounded-xl border border-purple-500/30 bg-gradient-to-br from-purple-900/50 to-gray-900 hover:border-purple-400 transition-all duration-300 group">
+                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/footer-lodyas.png')] opacity-20"></div>
+                <div class="relative p-6 text-center z-10">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-20 h-20 bg-purple-800/30 rounded-full flex items-center justify-center border border-purple-500/30 backdrop-blur-sm">
+                            <img src="https://cdn-icons-png.flaticon.com/512/619/619032.png" alt="Support" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+                    <div class="text-4xl font-bold text-white mb-2 font-russo bg-gradient-to-r from-purple-400 to-white bg-clip-text text-transparent">24/7</div>
+                    <div class="text-purple-200 text-sm uppercase tracking-wider">Боевая готовность</div>
+                </div>
+                <div class="absolute bottom-0 right-0 w-24 h-24 opacity-20 group-hover:opacity-40 transition-opacity duration-300">
+                    <img src="https://cdn-icons-png.flaticon.com/512/619/619017.png" alt="Shield icon" class="w-full h-full object-contain">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Plans Section -->
+<section class="py-16 bg-gradient-to-b from-gray-900 to-black">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <div class="flex items-center justify-center mb-4">
+                <span class="russian-flag"></span>
+                <h2 class="text-3xl md:text-4xl font-bold font-russo section-title">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-white">ТЕКУЩИЕ ОПЕРАЦИИ</span>
+                </h2>
+            </div>
+            <p class="text-lg text-purple-200 max-w-2xl mx-auto">
+                Разработка инновационных VR-тренажёров для современных военных
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="relative overflow-hidden rounded-xl border border-purple-500/20 bg-gradient-to-br from-purple-900/30 to-gray-900 hover:border-purple-400 transition-all duration-500 group">
+                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-geometric.png')] opacity-30"></div>
+                <div class="relative p-8 z-10">
+                    <div class="flex justify-center mb-6">
+                        <div class="w-24 h-24 bg-purple-900/50 rounded-full flex items-center justify-center border-2 border-purple-500/30 backdrop-blur-sm">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3132/3132789.png" alt="Basic Training" class="w-16 h-16 object-contain">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4 text-center font-russo">VR-КМБ</h3>
+                    <p class="text-purple-200 text-center mb-6">Базовый курс в виртуальной реальности</p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
+                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Интерактивная строевая подготовка</span>
+                        </li>
+                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
+                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Тренажёр огневой подготовки</span>
+                        </li>
+                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
+                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Тактические учения в VR</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="absolute -bottom-10 -right-10 w-40 h-40 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" alt="Soldier silhouette" class="w-full h-full object-contain">
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="relative overflow-hidden rounded-xl border border-purple-500/20 bg-gradient-to-br from-purple-900/30 to-gray-900 hover:border-purple-400 transition-all duration-500 group">
+                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')] opacity-30"></div>
+                <div class="relative p-8 z-10">
+                    <div class="flex justify-center mb-6">
+                        <div class="w-24 h-24 bg-purple-900/50 rounded-full flex items-center justify-center border-2 border-purple-500/30 backdrop-blur-sm">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3520/3520984.png" alt="Military Tech" class="w-16 h-16 object-contain">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4 text-center font-russo">ТЕХНИКА</h3>
+                    <p class="text-purple-200 text-center mb-6">Симуляторы современного вооружения</p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
+                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Танковые симуляторы (Т-14 "Армата")</span>
+                        </li>
+                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
+                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Авиатренажёры (Су-35, МиГ-35)</span>
+                        </li>
+                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
+                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Системы ПВО (С-400, Панцирь-С1)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="absolute -bottom-10 -right-10 w-40 h-40 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3520/3520984.png" alt="Tank silhouette" class="w-full h-full object-contain">
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="relative overflow-hidden rounded-xl border border-purple-500/20 bg-gradient-to-br from-purple-900/30 to-gray-900 hover:border-purple-400 transition-all duration-500 group">
+                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagmonds.png')] opacity-30"></div>
+                <div class="relative p-8 z-10">
+                    <div class="flex justify-center mb-6">
+                        <div class="w-24 h-24 bg-purple-900/50 rounded-full flex items-center justify-center border-2 border-purple-500/30 backdrop-blur-sm">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3132/3132739.png" alt="Special Ops" class="w-16 h-16 object-contain">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4 text-center font-russo">СПЕЦНАЗ</h3>
+                    <p class="text-purple-200 text-center mb-6">Тренажёры для элитных подразделений</p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
+                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Операции по освобождению заложников</span>
+                        </li>
+                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
+                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Городские боевые действия</span>
+                        </li>
+                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
+                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Разведывательные миссии в VR</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="absolute -bottom-10 -right-10 w-40 h-40 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3132/3132789.png" alt="Special forces silhouette" class="w-full h-full object-contain">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         @include('footer')
     </div>
 
+    <script>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.tab-btn');
+        const teamMembers = document.querySelectorAll('.team-card');
+        
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                tabs.forEach(t => t.classList.remove('active', 'bg-army-green', 'text-white'));
+                
+                // Add active class to clicked tab
+                tab.classList.add('active', 'bg-army-green', 'text-white');
+                
+                // Get filter value
+                const filter = tab.dataset.tab;
+                
+                // Filter team members
+                teamMembers.forEach(member => {
+                    if (filter === 'all' || member.dataset.category === filter) {
+                        member.style.display = 'block';
+                    } else {
+                        member.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Initialize first tab as active
+        tabs[0].classList.add('active', 'bg-army-green', 'text-white');
+        
+        // Animate elements when they come into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        document.querySelectorAll('.team-card, .stats-item, .plan-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
     <script>
         // Tab functionality
         const tabs = document.querySelectorAll('.tab-btn');

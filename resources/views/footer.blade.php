@@ -25,7 +25,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="mission.php" class="flex items-center group text-gray-300 hover:text-white transition-colors">
+                        <a href="{{ route('mission') }}" class="flex items-center group text-gray-300 hover:text-white transition-colors">
                             <span class="w-2 h-2 bg-blue-400 rounded-full mr-2 group-hover:animate-pulse"></span>
                             Миссия и ценности
                         </a>
@@ -117,39 +117,58 @@
         </div>
 
         <!-- Нижняя часть футера с соцсетями -->
-        <div class="border-t border-gray-700 pt-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <div class="flex items-center">
-                        <div class="h-8 w-8 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-md flex items-center justify-center mr-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
-                            </svg>
-                        </div>
-                        <span class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-400">Цифровые путешествия</span>
-                    </div>
-                    <p class="text-sm text-gray-400 mt-2">&copy; 2025 Все права защищены</p>
+<div class="border-t border-purple-900 pt-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0 text-center md:text-left">
+            <div class="flex items-center justify-center md:justify-start">
+                <div class="h-10 w-10 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center mr-3 shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
                 </div>
-
-                <div class="flex space-x-6">
-                    <a href="https://vk.com/1anchay" target="_blank" class="social-icon h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition-all duration-300 hover:rotate-12 hover:scale-110">
-                        <img src="{{ asset('images/vk.png') }}" alt="VK" class="h-6 w-6">
-                    </a>
-                    <a href="https://t.me/nostars007" target="_blank" class="social-icon h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-500 transition-all duration-300 hover:rotate-12 hover:scale-110">
-                        <img src="{{ asset('images/telegram.png') }}" alt="Telegram" class="h-6 w-6">
-                    </a>
-                    <a href="https://instagram.com/your_profile" target="_blank" class="social-icon h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition-all duration-300 hover:rotate-12 hover:scale-110">
-                        <img src="{{ asset('images/insta.jfif') }}" alt="Instagram" class="h-6 w-6 rounded">
-                    </a>
-                    <a href="https://github.com/your_profile" target="_blank" class="social-icon h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:rotate-12 hover:scale-110">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                        </svg>
-                    </a>
-                </div>
+                <span class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 font-russo">VR-КМБ</span>
             </div>
+            <p class="text-sm text-purple-300 mt-2">&copy; 2025 Все права защищены. Курс молодого VR-бойца</p>
+        </div>
+
+        <div class="flex space-x-4">
+            <!-- ВКонтакте -->
+            <a href="#" target="_blank" class="social-icon h-12 w-12 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 hover:-translate-y-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.073 2H8.938C3.332 2 2 3.333 2 8.927v6.136C2 20.667 3.323 22 8.927 22h6.136C20.667 22 22 20.677 22 15.073V8.938C22 3.332 20.677 2 15.073 2zm3.073 14.27h-1.459c-.552 0-.718-.447-1.708-1.437-.864-.833-1.229-.937-1.448-.937-.302 0-.385.083-.385.5v1.312c0 .354-.115.563-1.042.563-1.51 0-3.19-.921-4.375-2.625-1.583-2.354-1.563-2.667-.021-4.583.938-1.166 2.104-2.333 2.104-1.604 0 .271-.271.333-.458.521-.24.24-.688.667-.99 1.021-.833.938-1.146 1.521-1.708 2.666-.188.406-.021.646.313.646h1.458c.406 0 .563-.083.708-.271.26-.344.552-.854.76-1.146.188-.292.375-.521.604-.521.5 0 .604.313.604.792v1.896c-.021.823-.24 1.021-.917 1.145-.188.042-.333.063-.5.063-.375 0-.5-.083-.5-.271V12.5c0-.521-.094-.625-.209-.729-.115-.104-.27-.125-.458-.125-.333 0-.667.167-.833.333l-.021.021c-.292.333-.792 1.021-.792 1.021s-.26.406-.74.406h-1.48c-.292 0-.438-.26-.313-.542.24-.542.771-1.375 1.23-1.896l1.23-1.292c.458-.458.656-.708 1.021-1.146.313-.375.708-.854 1.229-1.229.385-.281.781-.458 1.188-.458h1.834c.333 0 .417.135.417.448v1.823c0 .333-.135.448-.417.615-.24.146-.5.323-.729.521-.24.208-.448.417-.656.667-.188.229-.281.333-.24.521.042.188.271.271.563.271h1.292c1.333 0 1.792-.729 1.854-1.646v-.667c0-.385.115-.5.542-.5h1.459c.313 0 .417.135.417.417v1.729c-.01.49-.115.782-.865 1.521-.76.76-1.021 1.021-1.521 1.667-.24.313-.385.552-.302.813.083.26.417.26.792.26z"/>
+                </svg>
+            </a>
+
+            <!-- Телеграм -->
+            <a href="#" target="_blank" class="social-icon h-12 w-12 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center hover:shadow-lg hover:shadow-blue-400/30 transition-all duration-300 hover:-translate-y-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.03-.1.06-.2-.06-.3-.12-.1-.3-.02-.43.02-.18.06-3.1 1.97-4.38 2.83-.42.28-.8.42-1.15.41-.38-.01-1.11-.21-1.65-.39-.67-.22-1.2-.34-1.16-.72.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 7.36-3.45.83-.44 1.66-.67 2.08-.62.48.05 1.4.32 1.24 1.88z"/>
+                </svg>
+            </a>
+
+            <!-- Одноклассники -->
+            <a href="#" target="_blank" class="social-icon h-12 w-12 rounded-full bg-gradient-to-br from-orange-500 to-yellow-500 flex items-center justify-center hover:shadow-lg hover:shadow-orange-500/30 transition-all duration-300 hover:-translate-y-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 1.811c4.533 0 8.189 3.656 8.189 8.189 0 4.533-3.656 8.189-8.189 8.189-4.533 0-8.189-3.656-8.189-8.189 0-4.533 3.656-8.189 8.189-8.189zm-3.681 5.205c-.338 0-.612.274-.612.612v3.744c0 .338.274.612.612.612h1.557v1.557c0 .338.274.612.612.612h3.024c.338 0 .612-.274.612-.612v-1.557h1.557c.338 0 .612-.274.612-.612V9.628c0-.338-.274-.612-.612-.612h-1.557V7.459c0-.338-.274-.612-.612-.612H9.488c-.338 0-.612.274-.612.612v1.557H7.319zm.612 1.224h1.557c.338 0 .612.274.612.612v3.024c0 .338-.274.612-.612.612H7.931v-4.248zm5.138 0h1.557v4.248h-1.557c-.338 0-.612-.274-.612-.612V9.851c0-.338.274-.612.612-.612z"/>
+                </svg>
+            </a>
+
+            <!-- Яндекс.Дзен -->
+            <a href="#" target="_blank" class="social-icon h-12 w-12 rounded-full bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center hover:shadow-lg hover:shadow-red-500/30 transition-all duration-300 hover:-translate-y-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z"/>
+                </svg>
+            </a>
+
+            <!-- RuTube -->
+            <a href="#" target="_blank" class="social-icon h-12 w-12 rounded-full bg-gradient-to-br from-purple-600 to-red-600 flex items-center justify-center hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 hover:-translate-y-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.42 4.5H3.58c-.92 0-1.67.75-1.67 1.67v11.66c0 .92.75 1.67 1.67 1.67h16.84c.92 0 1.67-.75 1.67-1.67V6.17c0-.92-.75-1.67-1.67-1.67zm-1.74 7.08l-5.01 2.21c-.44.19-.95-.04-1.14-.48v-.01c-.07-.16-.1-.34-.1-.52V9.62c0-.57.46-1.03 1.03-1.03.18 0 .36.05.52.14l5.01 3.22c.42.27.54.82.27 1.24-.13.2-.33.33-.55.37z"/>
+                </svg>
+            </a>
         </div>
     </div>
+</div>
 
     <!-- Анимированные элементы -->
     <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 animate-pulse"></div>
