@@ -397,210 +397,196 @@
                 </div>
             </div>
         </section>
-<!-- Stats Section -->
-<section class="py-16 bg-gradient-to-b from-purple-900/80 to-gray-900">
-    <div class="container mx-auto px-6">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <!-- Stat 1 -->
-            <div class="relative overflow-hidden rounded-xl border border-purple-500/30 bg-gradient-to-br from-purple-900/50 to-gray-900 hover:border-purple-400 transition-all duration-300 group">
-                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20"></div>
-                <div class="relative p-6 text-center z-10">
-                    <div class="flex justify-center mb-4">
-                        <div class="w-20 h-20 bg-purple-800/30 rounded-full flex items-center justify-center border border-purple-500/30 backdrop-blur-sm">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" alt="Years" class="w-12 h-12 object-contain">
-                        </div>
-                    </div>
-                    <div class="text-4xl font-bold text-white mb-2 font-russo bg-gradient-to-r from-purple-400 to-white bg-clip-text text-transparent">10+</div>
-                    <div class="text-purple-200 text-sm uppercase tracking-wider">Лет на VR-фронте</div>
-                </div>
-                <div class="absolute bottom-0 right-0 w-24 h-24 opacity-20 group-hover:opacity-40 transition-opacity duration-300">
-                    <img src="https://cdn-icons-png.flaticon.com/512/821/821365.png" alt="Military icon" class="w-full h-full object-contain">
-                </div>
-            </div>
-
-            <!-- Stat 2 -->
-            <div class="relative overflow-hidden rounded-xl border border-purple-500/30 bg-gradient-to-br from-purple-900/50 to-gray-900 hover:border-purple-400 transition-all duration-300 group">
-                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagonal-striped-brick.png')] opacity-20"></div>
-                <div class="relative p-6 text-center z-10">
-                    <div class="flex justify-center mb-4">
-                        <div class="w-20 h-20 bg-purple-800/30 rounded-full flex items-center justify-center border border-purple-500/30 backdrop-blur-sm">
-                            <img src="https://cdn-icons-png.flaticon.com/512/3520/3520766.png" alt="Operations" class="w-12 h-12 object-contain">
-                        </div>
-                    </div>
-                    <div class="text-4xl font-bold text-white mb-2 font-russo bg-gradient-to-r from-purple-400 to-white bg-clip-text text-transparent">50+</div>
-                    <div class="text-purple-200 text-sm uppercase tracking-wider">Боевых симуляторов</div>
-                </div>
-                <div class="absolute bottom-0 right-0 w-24 h-24 opacity-20 group-hover:opacity-40 transition-opacity duration-300">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3520/3520772.png" alt="VR icon" class="w-full h-full object-contain">
-                </div>
-            </div>
-
-            <!-- Stat 3 -->
-            <div class="relative overflow-hidden rounded-xl border border-purple-500/30 bg-gradient-to-br from-purple-900/50 to-gray-900 hover:border-purple-400 transition-all duration-300 group">
-                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagmonds.png')] opacity-20"></div>
-                <div class="relative p-6 text-center z-10">
-                    <div class="flex justify-center mb-4">
-                        <div class="w-20 h-20 bg-purple-800/30 rounded-full flex items-center justify-center border border-purple-500/30 backdrop-blur-sm">
-                            <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" alt="Soldiers" class="w-12 h-12 object-contain">
-                        </div>
-                    </div>
-                    <div class="text-4xl font-bold text-white mb-2 font-russo bg-gradient-to-r from-purple-400 to-white bg-clip-text text-transparent">1000+</div>
-                    <div class="text-purple-200 text-sm uppercase tracking-wider">Подготовленных бойцов</div>
-                </div>
-                <div class="absolute bottom-0 right-0 w-24 h-24 opacity-20 group-hover:opacity-40 transition-opacity duration-300">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3132/3132739.png" alt="Soldier icon" class="w-full h-full object-contain">
-                </div>
-            </div>
-
-            <!-- Stat 4 -->
-            <div class="relative overflow-hidden rounded-xl border border-purple-500/30 bg-gradient-to-br from-purple-900/50 to-gray-900 hover:border-purple-400 transition-all duration-300 group">
-                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/footer-lodyas.png')] opacity-20"></div>
-                <div class="relative p-6 text-center z-10">
-                    <div class="flex justify-center mb-4">
-                        <div class="w-20 h-20 bg-purple-800/30 rounded-full flex items-center justify-center border border-purple-500/30 backdrop-blur-sm">
-                            <img src="https://cdn-icons-png.flaticon.com/512/619/619032.png" alt="Support" class="w-12 h-12 object-contain">
-                        </div>
-                    </div>
-                    <div class="text-4xl font-bold text-white mb-2 font-russo bg-gradient-to-r from-purple-400 to-white bg-clip-text text-transparent">24/7</div>
-                    <div class="text-purple-200 text-sm uppercase tracking-wider">Боевая готовность</div>
-                </div>
-                <div class="absolute bottom-0 right-0 w-24 h-24 opacity-20 group-hover:opacity-40 transition-opacity duration-300">
-                    <img src="https://cdn-icons-png.flaticon.com/512/619/619017.png" alt="Shield icon" class="w-full h-full object-contain">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Plans Section -->
+<!-- Video Section -->
 <section class="py-16 bg-gradient-to-b from-gray-900 to-black">
     <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-            <div class="flex items-center justify-center mb-4">
-                <span class="russian-flag"></span>
-                <h2 class="text-3xl md:text-4xl font-bold font-russo section-title">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-white">ТЕКУЩИЕ ОПЕРАЦИИ</span>
-                </h2>
-            </div>
-            <p class="text-lg text-purple-200 max-w-2xl mx-auto">
-                Разработка инновационных VR-тренажёров для современных военных
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold font-russo mb-4">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">ВИРТУАЛЬНЫЙ КУРС МОЛОДОГО БОЙЦА</span>
+            </h2>
+            <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                Ознакомьтесь с демонстрацией нашего VR-тренажёра для начальной военной подготовки
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <div class="relative overflow-hidden rounded-xl border border-purple-500/20 bg-gradient-to-br from-purple-900/30 to-gray-900 hover:border-purple-400 transition-all duration-500 group">
-                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-geometric.png')] opacity-30"></div>
-                <div class="relative p-8 z-10">
-                    <div class="flex justify-center mb-6">
-                        <div class="w-24 h-24 bg-purple-900/50 rounded-full flex items-center justify-center border-2 border-purple-500/30 backdrop-blur-sm">
-                            <img src="https://cdn-icons-png.flaticon.com/512/3132/3132789.png" alt="Basic Training" class="w-16 h-16 object-contain">
-                        </div>
+        <!-- Video Player Container -->
+        <div class="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border border-gray-700/50 bg-gray-800/20 backdrop-blur-sm">
+            <!-- Video Player -->
+            <div class="relative pt-[56.25%]"> <!-- 16:9 Aspect Ratio -->
+                <video 
+                    id="kmb-video" 
+                    class="absolute top-0 left-0 w-full h-full object-cover"
+                    poster="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" 
+                    controls
+                    controlsList="nodownload"
+                >
+                    <source src="/videos/it-kmb-demo.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео тег.
+                </video>
+                
+                <!-- Custom Controls (optional) -->
+                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 flex items-center">
+                    <!-- Play/Pause Button -->
+                    <button id="play-btn" class="text-white mr-4 focus:outline-none">
+                        <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                        </svg>
+                        <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    
+                    <!-- Progress Bar -->
+                    <div class="flex-grow h-2 bg-gray-600/50 rounded-full overflow-hidden mr-4">
+                        <div id="progress-bar" class="h-full bg-gradient-to-r from-blue-500 to-purple-600" style="width: 0%"></div>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4 text-center font-russo">VR-КМБ</h3>
-                    <p class="text-purple-200 text-center mb-6">Базовый курс в виртуальной реальности</p>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
-                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Интерактивная строевая подготовка</span>
-                        </li>
-                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
-                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Тренажёр огневой подготовки</span>
-                        </li>
-                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
-                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Тактические учения в VR</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="absolute -bottom-10 -right-10 w-40 h-40 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" alt="Soldier silhouette" class="w-full h-full object-contain">
+                    
+                    <!-- Time Display -->
+                    <div class="text-white text-sm font-mono">
+                        <span id="current-time">00:00</span> / 
+                        <span id="duration">00:00</span>
+                    </div>
+                    
+                    <!-- Fullscreen Button -->
+                    <button id="fullscreen-btn" class="text-white ml-4 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
                 </div>
             </div>
-
-            <!-- Card 2 -->
-            <div class="relative overflow-hidden rounded-xl border border-purple-500/20 bg-gradient-to-br from-purple-900/30 to-gray-900 hover:border-purple-400 transition-all duration-500 group">
-                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')] opacity-30"></div>
-                <div class="relative p-8 z-10">
-                    <div class="flex justify-center mb-6">
-                        <div class="w-24 h-24 bg-purple-900/50 rounded-full flex items-center justify-center border-2 border-purple-500/30 backdrop-blur-sm">
-                            <img src="https://cdn-icons-png.flaticon.com/512/3520/3520984.png" alt="Military Tech" class="w-16 h-16 object-contain">
+            
+            <!-- Video Info -->
+            <div class="p-6 bg-gray-900/50 border-t border-gray-700/50">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mr-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-lg flex items-center justify-center border border-gray-700/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v8a2 2 0 01-2 2h-2a2 2 0 01-2-2V6z" />
+                            </svg>
                         </div>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4 text-center font-russo">ТЕХНИКА</h3>
-                    <p class="text-purple-200 text-center mb-6">Симуляторы современного вооружения</p>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
-                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-1">IT КМБ: VR Тренажёр</h3>
+                        <p class="text-gray-300 text-sm mb-2">Демонстрация возможностей виртуальной подготовки</p>
+                        <div class="flex items-center text-sm text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
                             </svg>
-                            <span>Танковые симуляторы (Т-14 "Армата")</span>
-                        </li>
-                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
-                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Авиатренажёры (Су-35, МиГ-35)</span>
-                        </li>
-                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
-                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Системы ПВО (С-400, Панцирь-С1)</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="absolute -bottom-10 -right-10 w-40 h-40 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3520/3520984.png" alt="Tank silhouette" class="w-full h-full object-contain">
+                            <span>Длительность: 0:39 мин</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- Card 3 -->
-            <div class="relative overflow-hidden rounded-xl border border-purple-500/20 bg-gradient-to-br from-purple-900/30 to-gray-900 hover:border-purple-400 transition-all duration-500 group">
-                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagmonds.png')] opacity-30"></div>
-                <div class="relative p-8 z-10">
-                    <div class="flex justify-center mb-6">
-                        <div class="w-24 h-24 bg-purple-900/50 rounded-full flex items-center justify-center border-2 border-purple-500/30 backdrop-blur-sm">
-                            <img src="https://cdn-icons-png.flaticon.com/512/3132/3132739.png" alt="Special Ops" class="w-16 h-16 object-contain">
-                        </div>
+        </div>
+        
+        <!-- Video Features -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+            <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700/30 hover:border-blue-500/50 transition-all">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z" />
+                        </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4 text-center font-russo">СПЕЦНАЗ</h3>
-                    <p class="text-purple-200 text-center mb-6">Тренажёры для элитных подразделений</p>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
-                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Операции по освобождению заложников</span>
-                        </li>
-                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
-                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Городские боевые действия</span>
-                        </li>
-                        <li class="flex items-start pl-2 border-l-2 border-purple-500/50 hover:border-purple-400 transition-all duration-300">
-                            <svg class="flex-shrink-0 h-5 w-5 text-purple-400 mr-3 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Разведывательные миссии в VR</span>
-                        </li>
-                    </ul>
+                    <h3 class="text-lg font-bold text-white">Реалистичная физика</h3>
                 </div>
-                <div class="absolute -bottom-10 -right-10 w-40 h-40 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3132/3132789.png" alt="Special forces silhouette" class="w-full h-full object-contain">
+                <p class="text-gray-300">Точное моделирование баллистики и поведения оружия в виртуальной среде</p>
+            </div>
+            
+            <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700/30 hover:border-purple-500/50 transition-all">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-purple-500/10 rounded-full flex items-center justify-center mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Тактические сценарии</h3>
                 </div>
+                <p class="text-gray-300">подготовленные боевые ситуаций для отработки навыков</p>
+            </div>
+            
+            <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700/30 hover:border-blue-500/50 transition-all">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063-1.063A3 3 0 009 8.172z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Анализ результатов</h3>
+                </div>
+                <p class="text-gray-300">Детальная статистика и разбор ошибок</p>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.getElementById('kmb-video');
+        const playBtn = document.getElementById('play-btn');
+        const playIcon = document.getElementById('play-icon');
+        const pauseIcon = document.getElementById('pause-icon');
+        const progressBar = document.getElementById('progress-bar');
+        const currentTime = document.getElementById('current-time');
+        const duration = document.getElementById('duration');
+        const fullscreenBtn = document.getElementById('fullscreen-btn');
+        
+        // Play/Pause toggle
+        playBtn.addEventListener('click', function() {
+            if (video.paused) {
+                video.play();
+                playIcon.classList.add('hidden');
+                pauseIcon.classList.remove('hidden');
+            } else {
+                video.pause();
+                playIcon.classList.remove('hidden');
+                pauseIcon.classList.add('hidden');
+            }
+        });
+        
+        // Update progress bar
+        video.addEventListener('timeupdate', function() {
+            const percent = (video.currentTime / video.duration) * 100;
+            progressBar.style.width = percent + '%';
+            
+            // Update time display
+            currentTime.textContent = formatTime(video.currentTime);
+            if (!isNaN(video.duration)) {
+                duration.textContent = formatTime(video.duration);
+            }
+        });
+        
+        // Click on progress bar to seek
+        progressBar.parentElement.addEventListener('click', function(e) {
+            const pos = (e.pageX - this.getBoundingClientRect().left) / this.offsetWidth;
+            video.currentTime = pos * video.duration;
+        });
+        
+        // Fullscreen toggle
+        fullscreenBtn.addEventListener('click', function() {
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.webkitRequestFullscreen) {
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) {
+                video.msRequestFullscreen();
+            }
+        });
+        
+        // Format time as MM:SS
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            seconds = Math.floor(seconds % 60);
+            return minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
+        }
+        
+        // Set initial duration when metadata is loaded
+        video.addEventListener('loadedmetadata', function() {
+            duration.textContent = formatTime(video.duration);
+        });
+    });
+</script>
 
         @include('footer')
     </div>
